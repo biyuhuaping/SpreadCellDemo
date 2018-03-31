@@ -7,7 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "UITableView+FDTemplateLayoutCell.h"
 #import "HomeView.h"
 #import "Masonry.h"
 #import "HomeCell.h"
