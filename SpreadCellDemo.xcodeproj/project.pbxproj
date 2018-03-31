@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		620C6529206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C6522206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.m */; };
-		620C652A206E5FCC005A207F /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C6524206E5FCC005A207F /* UITableView+FDKeyedHeightCache.m */; };
-		620C652B206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C6526206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.m */; };
-		620C652C206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C6528206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		62365A0B206135C5007CD792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62365A0A206135C5007CD792 /* AppDelegate.m */; };
 		62365A13206135C5007CD792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62365A12206135C5007CD792 /* Assets.xcassets */; };
 		62365A16206135C5007CD792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62365A14206135C5007CD792 /* LaunchScreen.storyboard */; };
@@ -32,14 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		620C6521206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
-		620C6522206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		620C6523206E5FCC005A207F /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		620C6524206E5FCC005A207F /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		620C6525206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		620C6526206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		620C6527206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		620C6528206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		62365A06206135C5007CD792 /* SpreadCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpreadCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62365A09206135C5007CD792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62365A0A206135C5007CD792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,21 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		620C6520206E5FCC005A207F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				620C6521206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.h */,
-				620C6522206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.m */,
-				620C6523206E5FCC005A207F /* UITableView+FDKeyedHeightCache.h */,
-				620C6524206E5FCC005A207F /* UITableView+FDKeyedHeightCache.m */,
-				620C6525206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.h */,
-				620C6526206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.m */,
-				620C6527206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.h */,
-				620C6528206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		623659FD206135C5007CD792 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +122,6 @@
 		62365A1F206135EE007CD792 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				620C6520206E5FCC005A207F /* Classes */,
 				62365A20206135EE007CD792 /* Masonry */,
 			);
 			path = Third;
@@ -257,15 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620C652B206E5FCC005A207F /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				62365A4F2061454C007CD792 /* HomeModel.m in Sources */,
 				62365A41206135EE007CD792 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				62365A3F206135EE007CD792 /* MASViewConstraint.m in Sources */,
 				62365A3A206135EE007CD792 /* MASCompositeConstraint.m in Sources */,
 				62365A40206135EE007CD792 /* NSArray+MASAdditions.m in Sources */,
 				62365A19206135C6007CD792 /* main.m in Sources */,
-				620C652A206E5FCC005A207F /* UITableView+FDKeyedHeightCache.m in Sources */,
-				620C6529206E5FCC005A207F /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				62365A3D206135EE007CD792 /* MASLayoutConstraint.m in Sources */,
 				62365A0B206135C5007CD792 /* AppDelegate.m in Sources */,
 				62365A43206135EE007CD792 /* ViewController+MASAdditions.m in Sources */,
@@ -274,7 +243,6 @@
 				62365A3B206135EE007CD792 /* MASConstraint.m in Sources */,
 				62365A3C206135EE007CD792 /* MASConstraintMaker.m in Sources */,
 				62365A4C2061367C007CD792 /* HomeView.m in Sources */,
-				620C652C206E5FCC005A207F /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				62365A492061366A007CD792 /* HomeCell.m in Sources */,
 				62365A462061364D007CD792 /* HomeViewController.m in Sources */,
 			);
