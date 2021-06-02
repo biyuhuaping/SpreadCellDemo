@@ -55,7 +55,7 @@
     if (model.isOpen) {
         self.contentL.numberOfLines = NSIntegerMax;
     } else {
-        self.contentL.numberOfLines = 4;
+        self.contentL.numberOfLines = 3;
     }
 }
 

@@ -24,15 +24,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
     [self.homeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
 }
 
-- (HomeView *)homeView
-{
+- (HomeView *)homeView{
     if (!_homeView) {
         _homeView = [[HomeView alloc] init];
         _homeView.backgroundColor = [UIColor whiteColor];
@@ -45,8 +42,7 @@
     return _homeView;
 }
 
-- (NSMutableArray *)testDataArray
-{
+- (NSMutableArray *)testDataArray{
     if (!_testDataArray) {
         NSArray *array = @[@"使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用",
                            @"使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用使用",
@@ -89,29 +85,25 @@
     return _testDataArray;
 }
 
-#pragma mark UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.testDataArray.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HomeCell class])];
     HomeModel *model = self.testDataArray[indexPath.row];
     cell.model = model;
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.model.isOpen = !cell.model.isOpen;
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeModel *model = self.testDataArray[indexPath.row];
     return model.cellHeight;
 }
